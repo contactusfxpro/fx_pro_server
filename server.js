@@ -1,7 +1,8 @@
 const express = require("express");
 const dotenv = require("dotenv");
-const cors = require('cors');
-const contactRoutes = require('./routes/contactRoutes')
+const cors = require("cors");
+const contactRoutes = require("./routes/contactRoutes");
+const fxRoutes = require("./routes/fxRoutes");
 
 dotenv.config();
 const app = express();
@@ -23,8 +24,8 @@ app.use(
 );
 
 app.use(express.json());
-app.use("/api/contact",contactRoutes);
-
+app.use("/api/contact", contactRoutes);
+app.use("/api/fx", fxRoutes);
 
 const PORT = process.env.PORT;
 
