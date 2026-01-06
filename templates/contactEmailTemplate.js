@@ -23,7 +23,7 @@ const contactEmailTemplate = ({ name, email, message }) => {
     .card {
       max-width: 520px;
       margin: 0 auto;
-      background-color: #0b0b0b;
+      background-color: #070d17;
       border-radius: 20px;
       border: 1px solid #1f1f1f;
       padding: 36px 30px;
@@ -86,7 +86,7 @@ const contactEmailTemplate = ({ name, email, message }) => {
     /* MESSAGE */
     .message-box {
       text-align: left;
-      background-color: #121212;
+      background-color: #070d17ab;
       padding: 18px;
       border-radius: 14px;
       font-size: 14px;
