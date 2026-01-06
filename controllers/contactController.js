@@ -17,7 +17,7 @@ const sendContactForm = async (req, res) => {
     const html = contactEmailTemplate({ name, email, message });
 
     await sendMail(
-      process.env.EMAIL,
+      "contactus.fxpro@gmail.com",
       "FX-Pro Contact Request",
       html
     );

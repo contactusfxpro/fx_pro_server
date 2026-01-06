@@ -10,7 +10,7 @@ const sendMail = async (to, subject, html) => {
   });
 
   const mailOptions = {
-    from: process.env.EMAIL_USER,
+    from: "contactus.fxpro@gmail.com",
     to,
     subject,
     html,
@@ -18,9 +18,9 @@ const sendMail = async (to, subject, html) => {
 
   try {
     await transporter.sendMail(mailOptions);
-    console.timeEnd("email-send"); // Logs e.g. "email-send: 1.234s"
+    // console.timeEnd("email-send"); // Logs e.g. "email-send: 1.234s"
   } catch (error) {
-    console.timeEnd("email-send");
+    // console.timeEnd("email-send");
     console.error("Error sending email:", error);
   }
 };
