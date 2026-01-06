@@ -4,8 +4,8 @@ const sendMail = async (to, subject, html) => {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: process.env.EMAIL_USER, // Email address
-      pass: process.env.EMAIL_PASS, // Email password or app password
+      user: "contactus.fxpro@gmail.com",
+      pass: "myidqjpjkmralnls",
     },
   });
 
@@ -18,8 +18,9 @@ const sendMail = async (to, subject, html) => {
 
   try {
     await transporter.sendMail(mailOptions);
-    console.log('Email sent successfully!');
+    console.timeEnd("email-send"); // Logs e.g. "email-send: 1.234s"
   } catch (error) {
+    console.timeEnd("email-send");
     console.error("Error sending email:", error);
   }
 };

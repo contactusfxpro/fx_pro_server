@@ -1,11 +1,12 @@
-const express = require("express");
 const dotenv = require("dotenv");
+const express = require("express");
 const cors = require("cors");
 const contactRoutes = require("./routes/contactRoutes");
 const fxRoutes = require("./routes/fxRoutes");
 const { fxLimiter } = require("./middleware/ratelimit");
 
-dotenv.config();
+dotenv.config();  // ONE ONLY
+
 const app = express();
 app.set("trust proxy", 1);
 
