@@ -123,8 +123,8 @@ const contactEmailTemplate = ({ name, email, message }) => {
       <!-- Icon -->
       <div class="icon">
         <img
-          src="https://res.cloudinary.com/dos5aaysx/image/upload/v1767694339/fxpro4_pjgiq1.png"
-          alt="FX_Pro"
+          src="https://res.cloudinary.com/dos5aaysx/image/upload/v1767774809/logo_jm9ead.png"
+          alt="CrossCurrencyFX"
         />
       </div>
 
