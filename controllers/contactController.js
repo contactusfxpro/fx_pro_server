@@ -5,7 +5,6 @@ const sendContactForm = async (req, res) => {
   try {
     const { name, email, message } = req.body;
 
-    // Validation
     if (!name || !email || !message) {
       return res.status(400).json({
         success: false,
@@ -13,7 +12,6 @@ const sendContactForm = async (req, res) => {
       });
     }
 
-    // Generate HTML template
     const html = contactEmailTemplate({ name, email, message });
 
     await sendMail(

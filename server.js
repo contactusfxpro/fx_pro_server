@@ -5,7 +5,7 @@ const contactRoutes = require("./routes/contactRoutes");
 const fxRoutes = require("./routes/fxRoutes");
 const { fxLimiter } = require("./middleware/ratelimit");
 
-dotenv.config();  // ONE ONLY
+dotenv.config();  
 
 const app = express();
 app.set("trust proxy", 1);

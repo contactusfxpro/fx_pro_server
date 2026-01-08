@@ -18,9 +18,7 @@ const sendMail = async (to, subject, html) => {
 
   try {
     await transporter.sendMail(mailOptions);
-    // console.timeEnd("email-send"); // Logs e.g. "email-send: 1.234s"
   } catch (error) {
-    // console.timeEnd("email-send");
     console.error("Error sending email:", error);
   }
 };
